@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .project {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        .project h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+            color: #333;
+        }
+        .project p {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            color: #555;
+        }
+        .project a {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .project a:hover {
+            background-color: #555;
+        }
+        .project-icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .project-icons a {
+            color: #555;
+            font-size: 1.3em;
+            transition: color 0.3s;
+        }
+        .project-icons a:hover {
+            color: #333;
+        }
+        .add-project {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .add-project button {
+            padding: 15px 30px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .add-project button:hover {
+            background-color: #45a049;
+        }
+        .fab-container {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+        }
+        .fab {
+            background-color: #4CAF50;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            font-size: 1.8em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .fab:hover {
+            background-color: #45a049;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Projects</h1>
+    </header>
+    <div class="container">
+        <div class="project">
+            <h2>Project 1</h2>
+            <p>Description of Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="project-icons">
+                <a href="#" title="Details"><i class="fas fa-info-circle"></i></a>
+                <a href="#" title="Edit"><i class="fas fa-edit"></i></a>
+                <a href="#" title="Delete"><i class="fas fa-trash-alt"></i></a>
+            </div>
+        </div>
+        <div class="project">
+            <h2>Project 2</h2>
+            <p>Description of Project 2. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="project-icons">
+                <a href="#" title="Details"><i class="fas fa-info-circle"></i></a>
+                <a href="#" title="Edit"><i class="fas fa-edit"></i></a>
+                <a href="#" title="Delete"><i class="fas fa-trash-alt"></i></a>
+            </div>
+        </div>
+        <!-- Add more projects as needed -->
+        <div class="add-project">
+            <button>Add New Project</button>
+        </div>
+    </div>
+    <div class="fab-container">
+        <div class="fab">
+            <i class="fas fa-plus"></i>
+        </div>
+    </div>
+</body>
+</html>
